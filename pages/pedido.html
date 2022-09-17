@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <title>Nodür</title>
+</head>
+<body>
+    <div class="promo">
+        <p class="promo__txt">3 cuotas sin interés - 10% de descuento con transferencia bancaria</p>
+    </div>
+
+    <header class="header">
+        <div class="header__page-info">
+            <a href="../index.html"><img class="logo"  src="../assets/icons/logo.png" alt="Logo Nodür"></a>
+            <h1 class="header__title">Nodür</h1>
+        </div>
+        <div class="header__functions">
+            <div class="search">
+                <label class="search__label" for="search">Buscar</label>
+                <input class="search__input" type="search" name="search" id="search" placeholder="Escribe aquí lo que buscas">
+            </div>
+            <img class="icon icon--medium" src="../assets/icons/cart.png" alt="comprar en MercadoLibre">
+        </div>
+    </header>
+    <nav>
+        <ul class="nav">
+            <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+            <li class="nav__item"><a class="nav__link" href="./productos.html">Productos</a></li>
+            <li class="nav__item"><a class="nav__link" href="./quienessomos.html">Quienes Somos</a></li>
+            <li class="nav__item"><a class="nav__link" href="./faqs.html">FAQs</a></li>
+            <li class="nav__item"><a class="nav__link" href="./pedido.html">Hace tu pedido</a></li>
+        </ul>
+    </nav>
+    <main class="main__section main__section--divided">
+        <aside class="aside">
+            <h3 class="main__title main__title--small">Contáctanos</h3>
+            <section class="contact__section">
+                <h4 class="main__title main__title--verysmall">Ventas</h4>
+                <div class="datos-contacto datos-contacto--spaced">
+                    <ul class="datos-contacto__list">
+                        <li class="dato-item"><img class="icon icon--small" src="../assets/icons/phone.webp" alt="Teléfono">Teléfono</li>
+                        <li class="dato-item"><img class="icon icon--small" src="../assets/icons/location.webp" alt="Ubicación">Ubicación</li>
+                        <li class="dato-item"><img class="icon icon--small" src="../assets/icons/email.webp" alt="Email">Email</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="contact__section">
+                <h4  class="main__title main__title--verysmall">Nuestras redes</h4>
+                <div class="socialmedia socialmedia--spaced">
+                    <img class="icon icon--medium" src="../assets/icons/facebook.webp" alt="Logo de Facebook">
+                    <img class="icon icon--medium" src="../assets/icons/instagram.webp" alt="Logo de Instagram">
+                </div>
+            </section>
+        </aside>
+        <section class="main__section main__section--700px">
+            <h2 class="main__title">Hace tu pedido</h2>
+            <form class="form" action="">
+                <label class="label label-name" for="name">Nombre.</label>
+                <input class="input input-name" type="text" id="name" required>
+                <label class="label label-phone" for="phone">Teléfono.</label>
+                <input class="input input-phone" type="text" id="phone" required>
+                <label class="label label-email" for="email">Email.</label>
+                <input class="input input-email" type="email" id="email" required>
+                <div class="div-selection">
+                    <div class="div-select">
+                        <label class="label label-select" for="select">Seleccione un producto.</label>
+                        <select class="input-select" name="select" id="select" required>
+                            <option class="option" value="macetacubo">Maceta cubo</option>
+                            <option class="option" value="maceta-jard-colg">Maceta jardinera colgante</option>
+                            <option class="option" value="maceta-cactus">Maceta para cactus</option>
+                            <option class="option" value="maceta-jard">Maceta jardinera</option>
+                            <option class="option" value="estanteria-panal">Estanteria panal</option>
+                            <option class="option" value="estanteria-panal-bl">Estanteria panal (blanca)</option>
+                            <option class="option" value="mesa-arrime">Mesa arrime</option>
+                            <option class="option" value="estante-hexagonal">Estante hexágonal</option>
+                            <option class="option" value="portam-hogar">Portamacetas hogar</option>
+                            <option class="option" value="portam-pie">Portamacetas de pie</option>
+                            <option class="option" value="portam-colg">Portamacetas colgante</option>
+                            <option class="option" value="portam-hexagono">Portamacetas portam-hexágono</option>
+                        </select>
+                    </div>   
+                    <div class="div-number">
+                            <label class="label label-number" for="amount">Indica aquí la cantidad</label>
+                            <input class="input input-number" type="number" id="amount" min="0" max="5" required>
+                    </div>
+                </div>
+                <label class="label label-textarea" for="textarea"></label>
+                <textarea class="input input-textarea" name="textarea" id="textarea" rows="5"></textarea>
+                <label for="submit"></label>
+                <input class="button" type="submit" name="submit" id="submit">
+            </form>
+            <p class="pedido-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum necessitatibus aliquam facilis quaerat quasi fuga deserunt voluptatibus ipsum reiciendis?</p>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer__page-info">
+            <a href="../index.html"><img class="logo logo--small"  src="../assets/icons/logo.png" alt="Logo Nodür"></a>
+            <div class="footer_div">
+                <span class="footer__terms"><a href="">Terminos y condiciones</a></span>
+                <ul class="footer__breadcrumbs">
+                    <li class="footer__breadcrumb"><a href="../index.html">Inicio</a></li>
+                    <li class="footer__breadcrumb"><a href="./pedido.html">Hace tu pedido</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer__datos">
+            <div class="datos-contacto">
+                <ul class="datos-contacto__list">
+                    <li class="dato-item"><img class="icon icon--small" src="../assets/icons/phone.webp" alt="Teléfono">Teléfono</li>
+                    <li class="dato-item"><img class="icon icon--small" src="../assets/icons/location.webp" alt="Ubicación">Ubicación</li>
+                    <li class="dato-item"><img class="icon icon--small" src="../assets/icons/email.webp" alt="Email">Email</li>
+                </ul>
+            </div>
+            <div class="socialmedia">
+                <a href="https://www.facebook.com/nodur.macetas.oficial"><img class="icon icon--medium" src="../assets/icons/facebook.webp" alt="Logo de Facebook"></a>
+                <a href="https://www.instagram.com/nodur_macetas/"><img class="icon icon--medium" src="../assets/icons/instagram.webp" alt="Logo de Instagram"></a>          
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
