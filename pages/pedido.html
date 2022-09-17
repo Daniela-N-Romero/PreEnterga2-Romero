@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,13 +19,12 @@
 </head>
 <body>
     <div class="promo">
-        <p class="promo__txt">3 cuotas sin interés - 10% de descuento con transferencia bancaria</p>
+        <p class="promo__txt">3 ctas. sin interés - <strong>10% de descuento</strong> con transferencia bancaria</p>
     </div>
 
     <header class="header">
         <div class="header__page-info">
             <a href="../index.html"><img class="logo"  src="../assets/icons/logo.png" alt="Logo Nodür"></a>
-            <h1 class="header__title">Nodür</h1>
         </div>
         <div class="header__functions">
             <div class="search">
@@ -33,16 +33,17 @@
             </div>
             <img class="icon icon--medium" src="../assets/icons/cart.png" alt="comprar en MercadoLibre">
         </div>
+        <nav>
+            <ul class="nav">
+                <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a class="nav__link" href="./productos.html">Productos</a></li>
+                <li class="nav__item"><a class="nav__link" href="./quienessomos.html">Quienes Somos</a></li>
+                <li class="nav__item"><a class="nav__link" href="./faqs.html">FAQs</a></li>
+                <li class="nav__item"><a class="nav__link" href="./pedido.html">Hace tu pedido</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul class="nav">
-            <li class="nav__item"><a class="nav__link" href="../index.html">Inicio</a></li>
-            <li class="nav__item"><a class="nav__link" href="./productos.html">Productos</a></li>
-            <li class="nav__item"><a class="nav__link" href="./quienessomos.html">Quienes Somos</a></li>
-            <li class="nav__item"><a class="nav__link" href="./faqs.html">FAQs</a></li>
-            <li class="nav__item"><a class="nav__link" href="./pedido.html">Hace tu pedido</a></li>
-        </ul>
-    </nav>
+    
     <main class="main__section main__section--divided">
         <aside class="aside">
             <h3 class="main__title main__title--small">Contáctanos</h3>
@@ -129,5 +130,6 @@
             </div>
         </div>
     </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

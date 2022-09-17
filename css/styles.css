@@ -45,22 +45,27 @@ ul{
     padding: 4px 8px;
 }
 
-.promo {
-    background-color: #93C47D;
+p.promo__txt {
     font-size: .7rem;
-    text-align: center;
-    padding: .5vh;
+    background-color:#93C47D;
+    margin: 0px;
+    padding: .35rem;
 }
 
 .header, .footer {
-    display: flex;
+    display: grid;
     background-image: linear-gradient(to right, white, rgb(30, 187, 226));
 }
 
+.header {
+    
+}
 .footer {
     margin-top: 8vh;
 }
 
+
+/* 
 .header__page-info, .footer__page-info{
     width: 45vw;
     display: flex;
@@ -68,26 +73,20 @@ ul{
     justify-content: flex-start;
     margin-left: 5vw;
     position: relative;
-}
-
-.header__title{
-    z-index: -1;
-    font-size: xx-small;
-    position:absolute;
-}
+} */
 
 .logo{
     max-width: 120px;
 } 
 
-.header__functions, .footer__datos {
+/* .header__functions, .footer__datos {
     width: 45vw;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-right: 5vw;
-}
-
+} */
+/* 
 .search {
     margin-right: 3vw;
 }
@@ -114,7 +113,7 @@ ul{
 .footer_div {
     margin: 2vw;
     font-size: .8rem;
-}
+} */
 
 .footer__breadcrumbs li+li:before {
     padding: 4px;
@@ -125,7 +124,7 @@ ul{
 .footer__breadcrumb {
     display: inline;
 }
-
+/* 
 .datos-contacto__list{
     margin-right: 4vw;
     font-size: 2vh;
@@ -134,7 +133,7 @@ ul{
 }
 .dato-item{
     padding: 1px;
-}
+} */
 
 .icon--medium{
     max-width: 40px;
@@ -170,8 +169,8 @@ nav {
 /* --- SLIDER --- */
 
 .slider {
-    margin:50px auto;
-    width:70%;
+    margin: auto;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -181,6 +180,7 @@ nav {
     width: 300%;
     animation: cambio 12s infinite;
     animation-direction: alternate;
+
 }
 
 @keyframes cambio {
@@ -205,6 +205,27 @@ nav {
 }
 
 /* --- INICIO --- */
+
+.div--shadow {
+    margin-top: 3vh;
+    background-color: #94c47d2d;
+}
+
+.div__title--big {
+    margin-top: 5vh;
+    color: rgba(31, 82, 82, 0.945);
+    font-size: 2.3rem;
+    text-align:center;
+    font-weight: 800;
+    text-shadow: 4px 3px 0px #7a7a7a3d;
+}
+
+.div__subtitle {
+    color: black;
+    font-size: 1rem;
+    text-align: center;
+    margin: 3%;
+}
 
 .home {
     display: flex;
