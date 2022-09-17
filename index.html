@@ -30,9 +30,10 @@
                 <label class="search__label" for="search">Buscar</label>
                 <input class="search__input" type="search" name="search" id="search" placeholder="Escribe aquí lo que buscas">
             </div>
-            <img class="icon icon--medium" src="./assets/icons/cart.png" alt="comprar en MercadoLibre">
+            <img class="icon icon--medium header__icon" src="./assets/icons/cart.png" alt="comprar en MercadoLibre">
         </div>
-        <nav>
+        <div>
+        <nav class="nav--lg">
             <ul class="nav">
                 <li class="nav__item"><a class="nav__link" href="./index.html">Inicio</a></li>
                 <li class="nav__item"><a class="nav__link" href="./pages/productos.html">Productos</a></li>
@@ -41,6 +42,27 @@
                 <li class="nav__item"><a class="nav__link" href="./pages/pedido.html">Hace tu pedido</a></li>
             </ul>
         </nav>
+
+        <nav class="nav--sm navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav__item"><a class="nav__link" href="./index.html">Inicio</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./pages/productos.html">Productos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./pages/quienessomos.html">Quienes Somos</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./pages/faqs.html">FAQs</a></li>
+                    <li class="nav__item"><a class="nav__link" href="./pages/pedido.html">Hace tu pedido</a></li>
+                <form class="d-flex" role="search">
+                    <button class="btn button" type="submit"><label class="search__label" for="search"><label class="search__label" for="search"></label>Buscar</label></button>
+                    <input class="search__input" type="search" name="search" id="search" placeholder="Escribe aquí lo que buscas">
+                </form>
+              </div>
+            </div>
+          </nav>
+
     </header>
     
     <main class="container">

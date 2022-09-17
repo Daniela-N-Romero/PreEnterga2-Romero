@@ -52,89 +52,6 @@ p.promo__txt {
     padding: .35rem;
 }
 
-.header, .footer {
-    display: grid;
-    background-image: linear-gradient(to right, white, rgb(30, 187, 226));
-}
-
-.header {
-    
-}
-.footer {
-    margin-top: 8vh;
-}
-
-
-/* 
-.header__page-info, .footer__page-info{
-    width: 45vw;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 5vw;
-    position: relative;
-} */
-
-.logo{
-    max-width: 120px;
-} 
-
-/* .header__functions, .footer__datos {
-    width: 45vw;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 5vw;
-} */
-/* 
-.search {
-    margin-right: 3vw;
-}
-
-.search, .datos-contacto {
-    display:flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
-
-.search__label, .search__input {
-    display: flex;
-}
-
-.search__label {
-    font-size: 0.8rem;
-}
-
-.search__input {
-    padding: 3px;
-    font-size: 0.7rem;
-}
-
-.footer_div {
-    margin: 2vw;
-    font-size: .8rem;
-} */
-
-.footer__breadcrumbs li+li:before {
-    padding: 4px;
-    color: rgb(28, 55, 66);
-    content: "►";
-}
-
-.footer__breadcrumb {
-    display: inline;
-}
-/* 
-.datos-contacto__list{
-    margin-right: 4vw;
-    font-size: 2vh;
-    display:flex;
-    flex-direction: column;
-}
-.dato-item{
-    padding: 1px;
-} */
-
 .icon--medium{
     max-width: 40px;
     margin: 2%;
@@ -145,27 +62,148 @@ p.promo__txt {
     margin: 0px 5px;
 }
 
+.logo{
+    max-width: 120px;
+} 
+
+.header, .footer {
+    background-image: linear-gradient(to right, white, rgb(30, 187, 226));
+    display: grid;
+}
+
+
+@media screen and (max-width: 768px){
+    
+    .search {
+        display: none;
+    }
+
+    .header{
+        grid-template-columns: 3fr 1fr 1fr;
+        grid-template-rows: repeat(3, 40px)
+    }
+
+    
+
+}
+
+@media screen and (min-width: 768px){
+
+        
+    .footer {
+        margin-top: 8vh;
+    }
+
+
+    .header__page-info, .footer__page-info{
+        width: 45vw;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        margin-left: 5vw;
+        position: relative;
+    } 
+
+    .header__functions, .footer__datos {
+        width: 45vw;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        margin-right: 5vw;
+    } 
+
+    .search {
+        margin-right: 3vw;
+    }
+
+    .search, .datos-contacto {
+        display:flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .search__label, .search__input {
+        display: flex;
+    }
+
+    .search__label {
+        font-size: 0.8rem;
+    }
+
+    .search__input {
+        font-size: 0.7rem;
+    }
+
+    .footer_div {
+        margin: 2vw;
+        font-size: .8rem;
+    }
+
+    .footer__breadcrumbs li+li:before {
+        padding: 4px;
+        color: rgb(28, 55, 66);
+        content: "►";
+    }
+
+    .footer__breadcrumb {
+        display: inline;
+    }
+
+    .datos-contacto__list{
+        margin-right: 4vw;
+        font-size: 2vh;
+        display:flex;
+        flex-direction: column;
+    }
+    .dato-item{
+        padding: 1px;
+    }
+}
+
 /* --- NAV --- */
 
-nav {
-    background-color: rgb(245, 244, 244);
-}
-.nav {
-    display: flex;
-    justify-content: space-evenly;
-    margin: 0vw 5vw;
-    padding: 1vh;
+@media screen and (max-width: 767px) {
+    .nav--lg {
+        display:none
+    }    
 }
 
-.nav__item{
-    padding: 2px;
+@media screen and (min-width: 768px){
+    .nav--lg {
+        display: block;
+        background-color: rgb(245, 244, 244);
+    }
+
+    .nav--lg ul{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0vw 5vw;
+        padding: 1vh;
+    }
+    .nav__item {
+        padding: 2px;
+    }
+        
+    .nav__item:hover {
+            background-color:rgb(206, 223, 223);
+            padding: 2px;
+    }
+    
 }
 
-.nav__item:hover {
-    background-color:rgb(206, 223, 223);
-    padding: 2px;
+@media screen and (min-width: 768px) {
+    .nav--sm {
+        display: none;
+    }
 }
 
+.nav__item {
+    text-align: end;
+}
+
+.navbar-nav form {
+    justify-content: end;
+}
 /* --- SLIDER --- */
 
 .slider {
