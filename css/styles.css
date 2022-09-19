@@ -318,41 +318,40 @@ p.promo__txt {
     min-height: 300px;
 }
 
-.home__article1 {
-    background-image: url(../assets/main-content/home/4.png);
-    background-size: cover;
-}
-
-.home__article2 {
-    background-image: url(../assets/main-content/home/5.png);
-    background-size: cover;
-}
-
-.home__article3 {
-    background-image: url(../assets/main-content/home/6.png);
-    background-size: cover;
-}
-
 .article__description {
     position: relative;
-    top: 100px;
+    top: 90px;
+    color:#ffffff;
+    background-color: rgba(0, 0, 0, 0.164);
+}
+
+.article__title a {
+    color:#ffffff;
 }
 
 .article__title {
     font-size: 1.2rem;
     text-decoration: underline;
     text-align: center;
+    line-height: 2rem;
 }
 
 .article__txt {
     text-align: center;
     font-size: .8rem;
+    color:#ffffff;
+    font-weight: 400;
+    line-height: 1.3rem;
 } 
 
 .article__img {
     position: absolute;
     width: 294px;
+    opacity: .8;
 }
+
+
+
 
 /* --- QUIENES SOMOS --- */
 
