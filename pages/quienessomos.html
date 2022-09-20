@@ -103,32 +103,41 @@
             </div>
 
         </main>
+    
+        <footer class="footer cointainer-fluid">
 
-        <footer class="footer">
-            <div class="footer__page-info">
-                <a href="../index.html"><img class="logo logo--small"  src="../assets/icons/logo.png" alt="Logo Nodür"></a>
-                <div class="footer_div">
-                    <span class="footer__terms"><a href="">Terminos y condiciones</a></span>
-                    <ul class="footer__breadcrumbs">
-                        <li class="footer__breadcrumb"><a href="../index.html">Inicio</a></li>
-                        <li class="footer__breadcrumb"><a href="./quienessomos.html">Quienes Somos</a></li>
+            <div class="row flex-column align-items-center flex-md-row">
+        
+                <div class="footer__page-info d-flex flex-column flex-md-row justify-content-evenly align-items-center mt-3 col-md-5">
+                    <a class="logo mb-md-3" href="../index.html"><img class="logo logo--small" src="../assets/icons/logo.png" alt="Logo Nodür"></a>
+                    <div class="footer_div ms-4">
+                        <span class="footer__terms"><a href="">Terminos y condiciones</a></span>
+                        <ul class="footer__breadcrumbs">
+                            <li class="footer__breadcrumb"><a href="../index.html">Inicio</a></li>
+                            <li class="footer__breadcrumb"><a href="./quienessomos.html">Quienes Somos</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="datos-contacto col-md-3 m-md-auto">
+                    <ul class="datos-contacto__list d-flex flex-column align-items-center mt-4 w-100 my-md-0">
+                        <li class="dato-item"><i class="bi bi-telephone"></i>11-1111-1111</li>
+                        <li class="dato-item"><i class="bi bi-geo-alt"></i>Berazategui</li>
+                        <li class="dato-item"><i class="bi bi-envelope"></i>ejemplo@gmail.com</li>
                     </ul>
                 </div>
-            </div>
-            <div class="footer__datos">
-                <div class="datos-contacto">
-                    <ul class="datos-contacto__list">
-                        <li class="dato-item"><img class="icon icon--small" src="../assets/icons/phone.webp" alt="Teléfono">Teléfono</li>
-                        <li class="dato-item"><img class="icon icon--small" src="../assets/icons/location.webp" alt="Ubicación">Ubicación</li>
-                        <li class="dato-item"><img class="icon icon--small" src="../assets/icons/email.webp" alt="Email">Email</li>
-                    </ul>
+                <div class="socialmedia fs-1 mb-4 d-flex justify-content-center  justify-content-md-evenly justify-content-md-evenly m-md-0 col-md-2 me-md-1">
+                        <a class="mx-3 mx-md-0" href="https://www.facebook.com/nodur.macetas.oficial"><i class="bi bi-facebook"></i></a>                  
+                        <a class="mx-3 mx-md-0" href="https://www.instagram.com/nodur_macetas/"><i class="bi bi-instagram"></i></a>
+                        
                 </div>
-                <div class="socialmedia">
-                    <a href="https://www.facebook.com/nodur.macetas.oficial"><img class="icon icon--medium" src="../assets/icons/facebook.webp" alt="Logo de Facebook"></a>
-                    <a href="https://www.instagram.com/nodur_macetas/"><img class="icon icon--medium" src="../assets/icons/instagram.webp" alt="Logo de Instagram"></a>
-                </div>
+
             </div>
+
         </footer>
-        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+        </script>
     </body>
 </html>
