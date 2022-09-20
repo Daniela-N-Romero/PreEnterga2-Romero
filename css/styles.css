@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Noto Serif', serif;
-    /* border: red 1px solid; */
 }
 
 a {
@@ -137,7 +136,6 @@ p.promo__txt {
     .datos-contacto, .socialmedia {
         width: 25%;
     }
-    
 }
 
 
@@ -149,9 +147,8 @@ p.promo__txt {
     }
     
     .nav--lg {
-        display:none
-    }
-    
+        display:none;
+    }    
     
     .nav--sm {    
         background-image: linear-gradient(to right, white, rgb(30, 187, 226));
@@ -250,20 +247,19 @@ p.promo__txt {
     padding: .5rem;
 }
 
-.shadow-drop-2-center{-webkit-animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both;animation:shadow-drop-2-center .4s cubic-bezier(.25,.46,.45,.94) both}
+.home-text-shadow {
+    animation:home-text-shadow .4s cubic-bezier(.25,.46,.45,.94) both;
+}
 
-@-webkit-keyframes shadow-drop-2-center {
+@keyframes home-text-shadow {
     0%{
-        -webkit-transform:translateZ(0);
         transform:translateZ(0);
-        -webkit-box-shadow:0 0 0 0 transparent;
-        box-shadow:0 0 0 0 transparent
+        box-shadow:0 0 0 0 transparent;
     }
     100%{
-        -webkit-transform:translateZ(50px);
         transform:translateZ(50px);
-        -webkit-box-shadow:0 0 20px 0 rgba(0,0,0,.35);
-        box-shadow:0 0 20px 0 rgba(0,0,0,.35)
+        shadow:0 0 20px 0 rgba(0,0,0,.35);
+        box-shadow:0 0 20px 0 rgba(0,0,0,.35);
     }
 }
 
