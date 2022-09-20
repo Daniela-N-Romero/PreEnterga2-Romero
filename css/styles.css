@@ -74,6 +74,21 @@ p.promo__txt {
     background-image: linear-gradient(to right, white, rgb(30, 187, 226));
 }
 
+.footer__breadcrumbs li+li:before {
+    padding: 4px;
+    color: rgb(28, 55, 66);
+    content: "►";
+}
+
+.footer__breadcrumb {
+    display: inline;
+}
+
+.datos-contacto {
+    width: 100%;
+}
+
+
 @media screen and (max-width: 768px){
     .search {
         display: none;
@@ -84,7 +99,7 @@ p.promo__txt {
     }
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
 
     .header--lg {
         background-image: linear-gradient(to right, white, rgb(30, 187, 226));
@@ -92,6 +107,10 @@ p.promo__txt {
     
     .search {
         margin-left: 2%;
+    }
+
+    .datos-contacto{
+        width: 40%;
     }
 
     .search, .datos-contacto {
@@ -112,56 +131,19 @@ p.promo__txt {
         font-size: 0.7rem;
     }
 
-
-
-
-    /* .footer__page-info{
-        width: 45vw;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        margin-left: 5vw;
-        position: relative;
-    } 
-
-    .footer__datos {
-        width: 45vw;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        margin-right: 5vw;
-    } 
-    
-    .footer_div {
-        margin: 2vw;
-        font-size: .8rem;
-    } */
-
-    .footer__breadcrumbs li+li:before {
-        padding: 4px;
-        color: rgb(28, 55, 66);
-        content: "►";
-    }
-
-    .footer__breadcrumb {
-        display: inline;
-    }
-
-    /* .datos-contacto__list{
-        margin-right: 4vw;
-        font-size: 2vh;
-        display:flex;
-        flex-direction: column;
-    }
-    .dato-item{
-        padding: 1px;
-    } */
 } 
+
+@media screen and (min-width:1200px){
+    .datos-contacto, .socialmedia {
+        width: 25%;
+    }
+    
+}
 
 
 /* --- NAV --- */
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     .container-fluid {
         padding: 0px 0px;
     }
@@ -189,7 +171,7 @@ p.promo__txt {
 
 }
 
-@media screen and (min-width: 768px){
+@media screen and (min-width: 769px){
     .nav--lg {
         display: block;
         background-color: rgb(245, 244, 244);
@@ -211,7 +193,7 @@ p.promo__txt {
     }    
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
 
     .nav--sm {
         display: none;
