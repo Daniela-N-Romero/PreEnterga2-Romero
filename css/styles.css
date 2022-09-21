@@ -396,13 +396,7 @@ p.promo__txt {
 /* --- QUIENES SOMOS --- */
 
 .main__section {
-    width: 90%;
-    margin: auto;
     text-align: center;
-}
-
-.main__section--divided {
-    display: flex;
 }
 
 .main__title {
@@ -418,16 +412,6 @@ p.promo__txt {
 
 .main__title--small {
     font-size: .9rem;
-}
-
-.main__title--verysmall {
-    font-size: .7rem;
-    display: inline;
-    padding: 10px;
-    margin: 5%;
-    margin-left: 15%;
-    text-align: left;
-    max-width: fit-content;
 }
 
 .main__p {
@@ -505,7 +489,7 @@ p.promo__txt {
         max-width: 45%;
         flex-direction: column;
     }
-    
+
     .card__img--small {
         min-width: 90%;
         max-width: 90%;
@@ -584,36 +568,32 @@ p.promo__txt {
 
 
 .aside {
-    width: 25%;
-    display: flex;
-    flex-direction: column;
     margin-right: 3%;
-    max-width: 250px;
 }
 
-.contact__section {
-    display: flex;
-    flex-direction: column;
-}
 
-.datos-contacto--spaced {
-    padding-left: 15%;
-    align-items: flex-start;
+.main__title--verysmall {
+    margin-top: 0;
+    font-size: .8rem;
+    display: inline;
+    padding: 10px;
     text-align: left;
 }
 
-.socialmedia--spaced {
-    padding: 5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.contact__section--1 {
+    width: 60%;
 }
 
-.form {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+@media screen and (min-width: 768px) {
+    .contact__section {
+        width: 100%;
+    }
+}
+
+.datos-contacto--small {
+    padding: 5%;
+    font-size: .8rem;
+    text-align: left;
 }
 
 .input {
@@ -623,24 +603,26 @@ p.promo__txt {
 
 .div-selection {
     display: flex;
-    justify-content: flex-start;
-    width: 100%;
+    justify-content: space-between;
 }
-.div-select {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+
+.div-select, .div-number{
+    font-size: .8rem;
     width: 50%;
 }
 
 .div-number {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    width: 45%;
+    width: 40%;
 }
 
 
-.main__section--700px {
-    max-width: 700px;
+.input-select, .input-number {
+    width: 100%;
+    margin: 0%;
+    font-size: .8rem;
 }
+
+.button--submit {
+    width: fit-content;
+}
+
