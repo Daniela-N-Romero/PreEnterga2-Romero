@@ -1,0 +1,74 @@
+// Mixins para Responsive Design y breakpoints
+
+@mixin min-width($minwidth){
+    @media screen and (min-width: $minwidth) {
+        @content;
+    }
+}
+
+@mixin max-width($maxwidth){
+    @media screen and (max-width: $maxwidth) {
+        @content;
+    }
+}
+
+
+// Mixins de animaciones
+
+@mixin text-shadow(){
+    animation:home-text-shadow .4s cubic-bezier(.25,.46,.45,.94) both;
+
+    @keyframes home-text-shadow {
+        0%{
+            transform:translateZ(0);
+            box-shadow:0 0 0 0 transparent;
+        }
+        100%{
+            transform:translateZ(50px);
+            shadow:0 0 20px 0 rgba(0,0,0,.35);
+            box-shadow:0 0 20px 0 rgba(0,0,0,.35);
+        }
+    }
+}
+
+@mixin focus-in-contract(){
+    animation: focus-in-contract 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	animation: focus-in-contract 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    
+    @keyframes focus-in-contract {
+        0% {
+        letter-spacing: 1em;
+        -webkit-filter: blur(12px);
+        filter: blur(12px);
+        opacity: 0;
+        }
+        100% {
+        -webkit-filter: blur(0px);
+        filter: blur(0px);
+        opacity: 1;
+        }
+    }
+}
+
+// Mixins 
+
+@mixin flex-wrap(){
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+// Mixins con variables 
+
+@mixin flex($justifyc:center, $alignc:center){
+    display: flex;
+    justify-content: $justifyc;
+    align-content: $alignc;
+}
+
+@mixin flex-column($justifyc:center, $alignc:center){
+    display: flex;
+    flex-direction: column;
+    justify-content: $justifyc;
+    align-content: $alignc;
+}

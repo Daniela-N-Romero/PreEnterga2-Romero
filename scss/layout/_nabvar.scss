@@ -1,0 +1,37 @@
+.logo {
+    margin-left: 2%;
+    max-width: 120px;
+}
+
+.nav{
+    padding: 0px 0px;
+}
+
+@include max-width(768px){
+    
+    .nav--lg{
+        display: none;
+    }
+    .nav--sm{
+        background-image: linear-gradient(to right, $blanco, $celeste);
+        box-shadow: 2px 2px 10px 1px rgba(0, 0, 0, 0.2);
+        nav ul li{
+            text-align: center;
+        }
+        nav form{
+            @include flex-column();
+        }
+    }
+    
+}
+
+@include min-width(769px){
+    
+    .nav--sm{
+        display: none;
+    }
+    .nav--lg{
+        display: block;
+        background-color: $gris-claro;
+    }
+}
