@@ -1,0 +1,13 @@
+.footer {
+    margin-top: 8vh;
+    background-image: linear-gradient(to right, $blanco, $celeste);
+}
+
+.footer__breadcrumb {
+    display: inline;
+    &+li:before{
+        padding: 4px;
+        color: $azul-oscuro;
+        content: "►";
+    }
+}

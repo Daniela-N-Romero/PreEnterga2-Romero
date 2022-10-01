@@ -1,0 +1,22 @@
+.div-button {
+    @include flex();
+}
+
+.button {
+    color: $azul-negro;
+    background-color: $verde-claro;
+    margin: 10px;
+    padding: 8px 12px;
+    border: 1px solid  $verde-medio;
+    border-radius: 8px;
+    &:hover{
+        color: $azul-medio;
+        background-color: $azul-muyclaro;
+        border: 1px solid  $azul-medio;
+        transition: all 1s;
+    }
+}
+
+.button--small{
+    padding: 5px 4px;
+}

@@ -1,0 +1,31 @@
+.search, .header--lg {
+    @include max-width(768px){
+        display: none;
+    }
+}
+
+@include min-width(788px){
+    .header--lg{
+        background-image: linear-gradient(to right, $blanco, $celeste);
+    }
+    .search, .datos-contacto {
+        @include flex-column();
+        align-items: flex-end;
+    }
+    .search{
+        margin-left: 2%;
+        .search__label, .search__input {
+            @include flex();
+            font-size: 0.7rem;
+        }
+    }
+    .datos-contacto{
+        width: 40%;
+    }
+}    
+
+@include min-width(1200px){
+    .datos-contacto, .socialmedia {
+        width: 25%;
+    } 
+}

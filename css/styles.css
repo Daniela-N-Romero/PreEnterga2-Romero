@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,11 +15,55 @@ ul {
   padding: 0%;
 }
 
-.logo {
-  margin-left: 2%;
-  max-width: 120px;
+.footer {
+  margin-top: 8vh;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(30, 187, 226));
 }
 
+.footer__breadcrumb {
+  display: inline;
+}
+.footer__breadcrumb + li:before {
+  padding: 4px;
+  color: rgb(28, 55, 66);
+  content: "►";
+}
+
+@media screen and (max-width: 768px) {
+  .search, .header--lg {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 788px) {
+  .header--lg {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(30, 187, 226));
+  }
+  .search, .datos-contacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: flex-end;
+  }
+  .search {
+    margin-left: 2%;
+  }
+  .search .search__label, .search .search__input {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-size: 0.7rem;
+  }
+  .datos-contacto {
+    width: 40%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .datos-contacto, .socialmedia {
+    width: 25%;
+  }
+}
 .nav {
   padding: 0px 0px;
 }
@@ -49,6 +94,48 @@ ul {
     display: block;
     background-color: rgb(245, 244, 244);
   }
+  .nav--lg ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    margin: 0vw 5vw;
+    padding: 1vh;
+  }
+  .nav--lg ul li {
+    padding: 2px;
+  }
+  .nav--lg ul li:hover {
+    background-color: rgb(206, 223, 223);
+  }
+}
+.div-button {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.button {
+  color: rgb(12, 41, 46);
+  background-color: rgb(187, 219, 171);
+  margin: 10px;
+  padding: 8px 12px;
+  border: 1px solid rgb(147, 196, 125);
+  border-radius: 8px;
+}
+.button:hover {
+  color: rgb(21, 103, 109);
+  background-color: rgb(206, 223, 223);
+  border: 1px solid rgb(21, 103, 109);
+  transition: all 1s;
+}
+
+.button--small {
+  padding: 5px 4px;
+}
+
+.logo {
+  margin-left: 2%;
+  max-width: 120px;
 }
 
 /*# sourceMappingURL=styles.css.map */

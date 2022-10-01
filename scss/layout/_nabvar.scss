@@ -1,8 +1,3 @@
-.logo {
-    margin-left: 2%;
-    max-width: 120px;
-}
-
 .nav{
     padding: 0px 0px;
 }
@@ -33,5 +28,16 @@
     .nav--lg{
         display: block;
         background-color: $gris-claro;
+        ul{
+            @include flex(space-evenly);
+            margin: 0vw 5vw;
+            padding: 1vh;
+            li{
+                padding: 2px;
+                &:hover{
+                    background-color:$azul-muyclaro;
+                }
+            }
+        }
     }
 }
