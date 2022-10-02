@@ -7,6 +7,10 @@
 
 a {
     text-decoration: none;
+    color: $azul-medio-2;
+    &:hover{
+        color: $negro;
+    }
 }
 
 ul {

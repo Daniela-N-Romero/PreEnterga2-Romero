@@ -52,9 +52,9 @@
 
 // Mixins sin variables
 
-@mixin flex-wrap(){
+@mixin flex-wrap($justify: space-around){
     display: flex;
-    justify-content: space-around;
+    justify-content: $justify;
     flex-wrap: wrap;
 }
 
