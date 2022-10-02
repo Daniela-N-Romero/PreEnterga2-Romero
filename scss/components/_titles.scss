@@ -1,0 +1,23 @@
+%main__title{
+    color: $azul-medio-2;
+    background-color: $verde-muyclaro;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    padding: 1vh 0vw;
+    border: $verde-medio;
+    border-radius: 5px;
+    font-size: 1.2rem;
+}
+
+%main__title--small{
+    font-size: .9rem;
+}
+
+
+%main__title--verysmall {
+    margin-top: 0;
+    font-size: .8rem;
+    display: inline;
+    padding: 10px;
+    text-align: left;
+}

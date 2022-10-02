@@ -68,13 +68,13 @@
     }
 }
 
-@include min-width(768px){
+@include min-width(480px){
     .main__cards {
         @include flex-wrap();
     }
 
     .card {
-        max-width: 300px;
+        max-width: 350px;
         margin: 2vh 2vw;
     }
 
@@ -83,4 +83,16 @@
         margin-top: 5%;
     }
 
+}
+
+@include min-width(600px){
+    .card {
+        max-width: 450px;
+    }
+}
+
+@include min-width(768px){
+    .card {
+        max-width: 300px;
+    }
 }

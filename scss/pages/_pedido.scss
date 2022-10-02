@@ -1,0 +1,50 @@
+.pedido-p {
+    @extend %texto-p1;
+    @extend %texto-cursiva-p5;
+    text-align: end;
+}
+
+.aside {
+    margin-right: 3%;
+}
+
+.contact__section--1 {
+    width: 60%;
+    @include min-width(768px){
+        width: 100%;
+    }
+}
+
+.datos-contacto--small {
+    padding: 5%;
+    font-size: .8rem;
+    text-align: left;
+}
+
+.input {
+    margin: 1vh 0vw;
+    width: 100%;
+}
+
+.div-selection {
+    display: flex;
+    justify-content: space-between;
+    .div-select {
+        @extend %div-input-w50;
+        .input-select {
+            @extend %input-w100;
+        }
+    }
+
+    .div-number {
+        @extend %div-input-w50;
+        width: 40%;
+        .input-number {
+            @extend %input-w100;
+        }
+    }
+}
+
+.button--submit {
+    width: fit-content;
+}

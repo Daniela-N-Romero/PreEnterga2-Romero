@@ -1,0 +1,10 @@
+.map {
+    margin-top: 3vh;
+    margin-bottom: 1vh;
+    @include flex();
+    .map__iframe {
+        width: 90vw;
+        height: 35vh;
+        margin: auto;
+    }
+}

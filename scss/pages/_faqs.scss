@@ -1,0 +1,12 @@
+
+.faqs__intro{
+    @extend %texto-p1;
+    .faqs__title {
+        margin-bottom: 1vh;
+        font-size: 1.3rem;
+    }
+    .faqs__p {
+        @extend %texto-cursiva-p5;
+    }
+}
+

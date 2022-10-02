@@ -62,6 +62,7 @@
 
 @mixin flex($justifyc:center, $alignc:center){
     display: flex;
+    flex-direction: row;
     justify-content: $justifyc;
     align-content: $alignc;
 }

@@ -378,7 +378,7 @@ a {
 } */
 
 /* --- QUIENES SOMOS --- */
-
+/* 
 .main__section {
     text-align: center;
 }
@@ -407,7 +407,7 @@ a {
 .main__p--justify {
     text-align: justify;
     padding-left: 1vw;
-}
+} */
 
 /* .main__cards {
     display: flex;
@@ -510,7 +510,7 @@ a {
     }
 
 } */
-
+/* 
 .map {
     margin-top: 3vh;
     margin-bottom: 1vh;
@@ -521,11 +521,11 @@ a {
     width: 90vw;
     height: 35vh;
     margin: auto;
-}
+} */
 
 /* --- FAQS --- */
 
-.faqs__intro, .pedido-p {
+/* .faqs__intro, .pedido-p {
     color: rgb(31, 82, 82);
     margin-top: 3vh;
     margin-bottom: 2vh;
@@ -545,11 +545,11 @@ a {
 
 .pedido-p {
     text-align: end;
-}
+} */
 
 /* --- HACE TU PEDIDO --- */
 
-
+/* 
 .aside {
     margin-right: 3%;
 }
@@ -561,8 +561,8 @@ a {
     display: inline;
     padding: 10px;
     text-align: left;
-}
-
+} */
+/* 
 .contact__section--1 {
     width: 60%;
 }
@@ -596,9 +596,9 @@ a {
 
 .div-number {
     width: 40%;
-}
+} */
 
-
+/* 
 .input-select, .input-number {
     width: 100%;
     margin: 0%;
@@ -607,5 +607,5 @@ a {
 
 .button--submit {
     width: fit-content;
-}
+} */
 
