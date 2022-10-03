@@ -92,10 +92,7 @@ p.promo__txt {
     text-align: center;
   }
   .nav--sm nav form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+    text-align: center;
   }
 }
 @media screen and (min-width: 769px) {
@@ -171,6 +168,7 @@ p.promo__txt {
   flex-direction: row;
   justify-content: space-between;
   margin: 2vh 0vh;
+  border: none;
 }
 .main__cards .card--small .card--small__text {
   display: flex;
@@ -178,6 +176,19 @@ p.promo__txt {
   justify-content: center;
   align-content: center;
   width: 40%;
+}
+@media screen and (min-width: 768px) {
+  .main__cards .card--small .card--small__text {
+    width: 80%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .main__cards .card--small {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
 }
 .main__cards .card__title {
   margin: 1rem;
@@ -194,7 +205,7 @@ p.promo__txt {
 }
 .main__cards .card__img--small {
   min-width: 50%;
-  max-width: 50%;
+  max-width: 70%;
 }
 
 @media screen and (min-width: 480px) {
@@ -272,35 +283,6 @@ p.promo__txt {
   margin: auto;
 }
 
-.pedido-p, .faqs__intro {
-  color: rgba(31, 82, 82, 0.945);
-  margin-top: 3vh;
-  margin-bottom: 2vh;
-  padding: 1vh 1vw;
-}
-
-.pedido-p, .faqs__intro .faqs__p {
-  font-family: "Great Vibes", cursive;
-  font-size: 1.5rem;
-  text-align: center;
-  padding: 1vh 5vw;
-}
-
-.main__section .main__title {
-  color: rgba(31, 82, 82, 0.945);
-  background-color: rgb(198, 221, 186);
-  margin-top: 3vh;
-  margin-bottom: 3vh;
-  padding: 1vh 0vw;
-  border: rgb(147, 196, 125);
-  border-radius: 5px;
-  font-size: 1.2rem;
-}
-
-.main__section .main__title--small {
-  font-size: 0.9rem;
-}
-
 .slider {
   margin-top: 2rem;
   width: 100%;
@@ -316,9 +298,14 @@ p.promo__txt {
 .slider ul li {
   list-style: none;
   width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
 }
 .slider ul li img {
   width: 100%;
+  max-width: 650px;
 }
 
 @keyframes slider {
@@ -341,6 +328,43 @@ p.promo__txt {
     margin-left: -200%;
   }
 }
+.pedido-p, .faqs__intro {
+  color: rgba(31, 82, 82, 0.945);
+  margin-top: 3vh;
+  margin-bottom: 2vh;
+  padding: 1vh 1vw;
+}
+
+.pedido-p, .faqs__intro .faqs__p {
+  font-family: "Great Vibes", cursive;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 1vh 5vw;
+}
+
+.main__title {
+  color: rgba(31, 82, 82, 0.945);
+  background-color: rgb(198, 221, 186);
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+  padding: 1vh 0vw;
+  border: rgb(147, 196, 125);
+  border-radius: 5px;
+  font-size: 1.2rem;
+}
+
+.main__title--small {
+  font-size: 0.9rem;
+}
+
+.main__title--verysmall {
+  margin-top: 0;
+  font-size: 0.8rem;
+  display: inline;
+  padding: 10px;
+  text-align: center;
+}
+
 .home-text {
   margin-top: 1vh;
   background-color: rgba(148, 196, 125, 0.1764705882);
@@ -436,39 +460,59 @@ p.promo__txt {
   animation: titulo 5s infinite;
 }
 .home .home-card .home-card__description .home-card__txt {
+  padding: 0px 15px;
   text-align: center;
   font-size: 0.8rem;
   color: rgb(255, 255, 255);
   font-weight: 400;
   line-height: 1.3rem;
+  animation: texto 5s infinite;
 }
 
 @keyframes background {
   0% {
-    background-color: rgba(15, 204, 218, 0.176);
+    background-color: rgba(28, 55, 66, 0.61);
   }
   50% {
-    background-color: rgba(255, 255, 255, 0.173);
+    background-color: rgba(57, 172, 172, 0.397);
   }
   50% {
-    background-color: rgba(255, 255, 255, 0.173);
+    background-color: rgba(57, 172, 172, 0.397);
   }
   100% {
-    background-color: rgba(15, 204, 218, 0.176);
+    background-color: rgba(28, 55, 66, 0.61);
   }
 }
 @keyframes titulo {
   0% {
     color: rgb(255, 255, 255);
+    font-size: 1.2rem;
   }
   50% {
-    color: rgb(12, 41, 46);
+    color: rgb(28, 55, 66);
+    font-size: 1.23rem;
   }
   50% {
-    color: rgb(12, 41, 46);
+    color: rgb(28, 55, 66);
+    font-size: 1.23rem;
   }
   100% {
     color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+  }
+}
+@keyframes texto {
+  0% {
+    font-size: 0.8rem;
+  }
+  50% {
+    font-size: 0.77rem;
+  }
+  50% {
+    font-size: 0.77rem;
+  }
+  100% {
+    font-size: 0.8rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -495,11 +539,6 @@ p.promo__txt {
 
 .contact__section--1 {
   width: 60%;
-}
-@media screen and (min-width: 768px) {
-  .contact__section--1 {
-    width: 100%;
-  }
 }
 
 .datos-contacto--small {

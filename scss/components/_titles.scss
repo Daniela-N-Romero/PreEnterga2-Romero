@@ -1,4 +1,4 @@
-%main__title{
+.main__title{
     color: $azul-medio-2;
     background-color: $verde-muyclaro;
     margin-top: 3vh;
@@ -9,15 +9,15 @@
     font-size: 1.2rem;
 }
 
-%main__title--small{
+.main__title--small{
     font-size: .9rem;
 }
 
 
-%main__title--verysmall {
+.main__title--verysmall {
     margin-top: 0;
     font-size: .8rem;
     display: inline;
     padding: 10px;
-    text-align: left;
+    text-align: center;
 }

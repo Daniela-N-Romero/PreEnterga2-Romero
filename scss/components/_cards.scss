@@ -15,9 +15,16 @@
         padding: 1.5vh;
         @include flex(space-between, null);
         margin: 2vh 0vh;
+        border: none;
         .card--small__text{
             @include flex-column();
             width: 40%;
+            @include min-width(768px){
+                width: 80%;
+            }
+        }
+        @include min-width(768px){
+            @include flex-column();
         }
         
     }
@@ -38,7 +45,7 @@
     
     .card__img--small {
         min-width: 50%;
-        max-width: 50%;
+        max-width: 70%;
     }
 }
 
@@ -58,7 +65,6 @@
     }
 
     .card--small__text{
-        // display: flex;
         width: 90%;
     }
 

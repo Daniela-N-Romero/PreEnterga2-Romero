@@ -7,12 +7,8 @@
 .aside {
     margin-right: 3%;
 }
-
 .contact__section--1 {
     width: 60%;
-    @include min-width(768px){
-        width: 100%;
-    }
 }
 
 .datos-contacto--small {

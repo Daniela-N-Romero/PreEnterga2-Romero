@@ -1,33 +1,3 @@
-.slider {
-    margin-top: 2rem;
-    width: 100%;
-    overflow: hidden;
-    ul {
-        display:flex;
-        padding: 0%;
-        width: 300%;
-        animation: slider 12s infinite;
-        animation-direction: alternate;
-        li {
-            list-style: none;
-            width:100%;
-            img {
-                width:100%;
-            }
-        }
-    }
-}
-
-@keyframes slider {
-    0% {margin-left: 0%;}
-    30% {margin-left: 0%;}
-
-    35% {margin-left: -100%;}
-    65% {margin-left: -100%;}
-
-    70% {margin-left: -200%;}
-    100% {margin-left: -200%;}
-}
 
 .home-text {
     margin-top: 1vh;
@@ -120,31 +90,47 @@
                 }
             }
             .home-card__txt{
+                padding: 0px 15px;
                 text-align: center;
                 font-size: .8rem;
                 color: $blanco;
                 font-weight: 400;
                 line-height: 1.3rem;
+                animation: texto 5s infinite;
             }
         }
     }
 }
 
 @keyframes background {
-    0% {background-color: rgba(15, 204, 218, 0.176);}
-    50% {background-color: rgba(255, 255, 255, 0.173);}
+    0% {background-color: rgba(28, 55, 66, 0.61);}
+    50% {background-color: rgba(57, 172, 172, 0.397);}
 
-    50% {background-color: rgba(255, 255, 255, 0.173);}
-    100% {background-color: rgba(15, 204, 218, 0.176);}
+    50% {background-color: rgba(57, 172, 172, 0.397);}
+    100% {background-color: rgba(28, 55, 66, 0.61);}
 }
 
 @keyframes titulo {
-    0% {color: $blanco;}
-    50% {color: $azul-negro;}
+    0% {color: $blanco;
+        font-size: 1.2rem;}
+    50% {color: $azul-oscuro;
+        font-size: 1.23rem;}
 
-    50% {color: $azul-negro;}
-    100% {color: $blanco;}
+    50% {color: $azul-oscuro;
+        font-size: 1.23rem;}
+    100% {color: $blanco;
+        font-size: 1.2rem;}
 }
+
+
+@keyframes texto {
+    0% {font-size: .8rem;}
+    50% {font-size: .77rem;}
+
+    50% {font-size: .77rem;}
+    100% {font-size: .8rem;}
+}
+
 
 .home-lg{
     @include min-width(1200px){

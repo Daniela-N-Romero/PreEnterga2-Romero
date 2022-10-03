@@ -1,11 +1,5 @@
 .main__section {
     text-align: center;
-    .main__title {
-        @extend %main__title;
-    }
-    .main__title--small {
-        @extend %main__title--small;
-    }
     .main__p {
         font-size: .9rem;
         margin: 1.5rem;

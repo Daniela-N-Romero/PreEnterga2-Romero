@@ -1,0 +1,32 @@
+.slider {
+    margin-top: 2rem;
+    width: 100%;
+    overflow: hidden;
+    ul {
+        display:flex;
+        padding: 0%;
+        width: 300%;
+        animation: slider 12s infinite;
+        animation-direction: alternate;
+        li {
+            list-style: none;
+            width:100%;
+            @include flex();
+            img {
+                width:100%;
+                max-width: 650px;
+            }
+        }
+    }
+}
+
+@keyframes slider {
+    0% {margin-left: 0%;}
+    30% {margin-left: 0%;}
+
+    35% {margin-left: -100%;}
+    65% {margin-left: -100%;}
+
+    70% {margin-left: -200%;}
+    100% {margin-left: -200%;}
+}
