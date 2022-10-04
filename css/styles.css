@@ -76,6 +76,10 @@ p.promo__txt {
   padding: 0.35rem;
 }
 
+.logo {
+  margin-left: 2%;
+}
+
 .nav {
   padding: 0px 0px;
 }
@@ -264,11 +268,6 @@ p.promo__txt {
   width: 100%;
   margin: 0%;
   font-size: 0.8rem;
-}
-
-.logo {
-  margin-left: 2%;
-  max-width: 120px;
 }
 
 .map {
