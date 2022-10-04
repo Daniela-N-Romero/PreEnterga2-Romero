@@ -16,7 +16,7 @@
 // Mixins de animaciones
 
 @mixin text-shadow(){
-    animation:home-text-shadow .4s cubic-bezier(.25,.46,.45,.94) both;
+    animation: home-text-shadow .4s cubic-bezier(.25,.46,.45,.94) both;
 
     @keyframes home-text-shadow {
         0%{
@@ -33,7 +33,6 @@
 
 @mixin focus-in-contract(){
     animation: focus-in-contract 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	animation: focus-in-contract 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     
     @keyframes focus-in-contract {
         0% {

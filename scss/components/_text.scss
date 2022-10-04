@@ -11,3 +11,11 @@
     text-align: center;
     padding: 1vh 5vw;
 }
+
+.text-shadow, %text-shadow {
+    @include text-shadow();
+}
+
+.text-contract, %text-contract{
+    @include focus-in-contract();
+}
