@@ -33,6 +33,17 @@ ul {
   content: "►";
 }
 
+p.promo__txt {
+  font-size: 0.9rem;
+  background-color: rgb(147, 196, 125);
+  margin: 0px;
+  padding: 0.35rem;
+}
+
+.logo {
+  margin-left: 2%;
+}
+
 @media screen and (max-width: 768px) {
   .search, .header--lg {
     display: none;
@@ -69,17 +80,6 @@ ul {
     width: 25%;
   }
 }
-p.promo__txt {
-  font-size: 0.9rem;
-  background-color: rgb(147, 196, 125);
-  margin: 0px;
-  padding: 0.35rem;
-}
-
-.logo {
-  margin-left: 2%;
-}
-
 .nav {
   padding: 0px 0px;
 }

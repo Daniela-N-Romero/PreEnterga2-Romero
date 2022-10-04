@@ -1,3 +1,14 @@
+p.promo__txt {
+    font-size: .9rem;
+    background-color:$verde-medio;
+    margin: 0px;
+    padding: .35rem;
+}
+
+.logo {
+    margin-left: 2%;
+}
+
 .search, .header--lg {
     @include max-width(768px){
         display: none;
@@ -30,13 +41,3 @@
     } 
 }
 
-p.promo__txt {
-    font-size: .9rem;
-    background-color:$verde-medio;
-    margin: 0px;
-    padding: .35rem;
-}
-
-.logo {
-    margin-left: 2%;
-}
