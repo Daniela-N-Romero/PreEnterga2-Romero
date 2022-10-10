@@ -1,0 +1,19 @@
+.modal-header{
+    background-color: $verde-muyclaro;
+    justify-content: center;
+    .main__title{
+    margin: 0%;
+    }
+}
+
+.modal-body div {
+    p{
+        color: $azul-medio-2;
+        margin: auto 0%;
+        font-size: 1rem;
+        padding: 0%;
+    }
+    img{
+        padding: 0%;
+    }
+}

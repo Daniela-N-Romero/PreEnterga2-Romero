@@ -17,6 +17,17 @@
     }
 }
 
+.button--close{
+    color:$negro;
+    background-color:$gris-claro;
+    border: 1px solid $gris;
+    &:hover{
+        color: $blanco;
+        background-color: $gris;
+        border: 1px solid $negro;
+    }
+}
+
 .button--small{
     padding: 5px 4px;
 }

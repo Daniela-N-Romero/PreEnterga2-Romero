@@ -144,6 +144,17 @@ p.promo__txt {
   transition: all 1s;
 }
 
+.button--close {
+  color: rgb(1, 14, 14);
+  background-color: rgb(245, 244, 244);
+  border: 1px solid rgb(128, 128, 128);
+}
+.button--close:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(128, 128, 128);
+  border: 1px solid rgb(1, 14, 14);
+}
+
 .button--small {
   padding: 5px 4px;
 }
@@ -282,6 +293,24 @@ p.promo__txt {
   width: 90vw;
   height: 35vh;
   margin: auto;
+}
+
+.modal-header {
+  background-color: rgb(198, 221, 186);
+  justify-content: center;
+}
+.modal-header .main__title {
+  margin: 0%;
+}
+
+.modal-body div p {
+  color: rgba(31, 82, 82, 0.945);
+  margin: auto 0%;
+  font-size: 1rem;
+  padding: 0%;
+}
+.modal-body div img {
+  padding: 0%;
 }
 
 .slider {
