@@ -502,27 +502,27 @@ p.promo__txt {
   height: 294px;
   position: relative;
   color: rgb(255, 255, 255);
-  animation: background 5s infinite;
+  animation: background 7s infinite;
 }
 .home .home-card .home-card__description .home-card__title {
   font-size: 1.2rem;
   padding: 3rem;
   text-decoration: underline;
   text-align: center;
-  animation: titulo 5s infinite;
+  animation: titulo 7s infinite;
 }
 .home .home-card .home-card__description .home-card__title a {
   color: #ffffff;
-  animation: titulo 5s infinite;
+  animation: titulo 7s infinite;
 }
 .home .home-card .home-card__description .home-card__txt {
   padding: 0px 15px;
   text-align: center;
   font-size: 0.8rem;
   color: rgb(255, 255, 255);
-  font-weight: 400;
+  font-weight: 800;
   line-height: 1.3rem;
-  animation: texto 5s infinite;
+  animation: texto 7s infinite ease-in-out;
 }
 
 @keyframes background {
@@ -559,16 +559,16 @@ p.promo__txt {
 }
 @keyframes texto {
   0% {
-    font-size: 0.8rem;
+    transform: scale(1);
   }
   50% {
-    font-size: 0.77rem;
+    transform: scale(1.02);
   }
   50% {
-    font-size: 0.77rem;
+    transform: scale(1.02);
   }
   100% {
-    font-size: 0.8rem;
+    transform: scale(1);
   }
 }
 @media screen and (min-width: 1200px) {

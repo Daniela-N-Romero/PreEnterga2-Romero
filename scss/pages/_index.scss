@@ -49,16 +49,16 @@
             height: 294px;
             position: relative;
             color:$blanco;
-            animation:  background 5s infinite;
+            animation:  background 7s infinite;
             .home-card__title{
                 font-size: 1.2rem;
                 padding: 3rem;
                 text-decoration: underline;
                 text-align: center;
-                animation: titulo 5s infinite;
+                animation: titulo 7s infinite;
                 a{
                     color:#ffffff;
-                    animation:  titulo 5s infinite;
+                    animation:  titulo 7s infinite;
                 }
             }
             .home-card__txt{
@@ -66,9 +66,10 @@
                 text-align: center;
                 font-size: .8rem;
                 color: $blanco;
-                font-weight: 400;
+                font-weight: 800;
                 line-height: 1.3rem;
-                animation: texto 5s infinite;
+                animation: texto 7s infinite ease-in-out;
+                
             }
         }
     }
@@ -96,11 +97,11 @@
 
 
 @keyframes texto {
-    0% {font-size: .8rem;}
-    50% {font-size: .77rem;}
+    0% {transform: scale(1);}
+    50% { transform: scale(1.02);}
 
-    50% {font-size: .77rem;}
-    100% {font-size: .8rem;}
+    50% {transform: scale(1.02);}
+    100% {transform: scale(1);}
 }
 
 
