@@ -36,6 +36,10 @@
                 padding: 2px;
                 &:hover{
                     background-color:$azul-muyclaro;
+                    border: $azul-muyclaro 1px solid 1%;
+                    border-radius: 15%;
+                    padding: 2px 4px; 
+                    transition: all 1s;
                 }
             }
         }

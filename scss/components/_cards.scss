@@ -36,9 +36,13 @@
     }
     .card__title--small{
         font-size: 1rem;
-        margin: 0%;
+        margin: 0rem;
     }
     
+    .card__price{
+        color: $azul-medio-2;
+    }
+
     .card__img {
         width: 70%;
         border-radius: 15px;
@@ -71,7 +75,7 @@
     }
 
     .card__title--small {
-        min-height: 2.2rem;
+        min-height: 1.5rem;
         margin-top: 5%;
     }
 }

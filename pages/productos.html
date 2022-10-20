@@ -38,8 +38,8 @@
                         <li class="nav__item"><a class="nav__link" href="./pedido.html">Hace tu pedido</a></li>
                     </ul> 
                     <form class="nav-form" action="">
-                        <label class="nav-form__label" for="search">Buscar</label>
-                        <input class="nav-form__input" type="search" name="search" id="search" placeholder="¿Qué estás buscando?">
+                        <label class="nav-form__label" for="search-sm">Buscar</label>
+                        <input class="nav-form__input" type="search" name="search" id="search-sm" placeholder="¿Qué estás buscando?">
                         <input class="button button--small" type="submit" value="Enviar">
                     </form>
                 </nav>
@@ -50,11 +50,11 @@
                 <div class="container-md">
                     <div class="row align-items-center">
                         <a class="col-md-3 p-md-0 col-lg-1 ms-lg-5 logo" href="../index.html"><img class="logo logo-img" src="../assets/icons/logo.png" alt="Logo Nodür"></a>
-                        <a class="col-md-1 p-md-0 ms-md-auto store" href="https://www.mercadolibre.com.ar/perfil/NODURMACETAS"><i class="bi bi-shop fs-1"></i></a>
-                        <div class="col-md-3 p-md-0 m-md-3 col-lg-2 search">
+                        <a class="col-md-1 p-md-0 ms-md-auto d-flex justify-content-end" href="https://www.mercadolibre.com.ar/perfil/NODURMACETAS"><i class="bi bi-shop fs-1"></i></a>
+                        <form class="col-md-3 p-md-0 m-md-3 col-lg-2 search">
                             <label class="search__label" for="search">Buscar</label>
                             <input class="search__input" type="search" name="search" id="search" placeholder="Escribe aquí lo que buscas">
-                        </div>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -79,8 +79,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/1.jpg" alt="Maceta con forma de cubo">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Maceta cubo</h3>
+                        <span class="card__price">$3000</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button  type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#maceta-cubo">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -88,8 +89,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/2.jpg" alt="Maceta jardinera colgante con herrajes de hierro">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Maceta jardinera colgante</h3>
+                        <span class="card__price">$1600</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#maceta-colgante">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -97,8 +99,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/3.jpg" alt="Maceta pequeña para cactus">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Maceta para cactus</h3>
+                        <span class="card__price">$1000</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#maceta-cactus">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -106,8 +109,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/4.jpg" alt="Maceta jardinera común de 70 centimetros">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Maceta jardinera</h3>
+                        <span class="card__price">$1400</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#maceta-jardinera">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -119,8 +123,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/5.jpg" alt="Estanteria con forma de panal de abejas">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Estanteria panal</h3>
+                        <span class="card__price">$4400</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#estanteria-panal">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -128,8 +133,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/6.jpg" alt="Estanteria con forma de panal de abejas con interior blanco">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Estanteria panal (interior blanco)</h3>
+                        <span class="card__price">$4400</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#estanteria-panal-blanco">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -137,8 +143,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/7.jpg" alt="Mesa de arrime con base de hierro">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Mesa de arrime de hierro</h3>
+                        <span class="card__price">$5400</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#mesa-de-arrime">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -146,8 +153,9 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/8.jpg" alt="Estante hexágonal">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Estante hexagonal</h3>
+                        <span class="card__price">$1500</span>
                         <div class="div-button">
-                            <button class="button button--small">Ver detalles</button>
+                            <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#estante-hexagonal">Ver detalles</button>
                         </div>
                     </div>
                 </article>
@@ -160,6 +168,7 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/9.jpg" alt="Portamacetas con forma de casa">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Portamacetas "Hogar"</h3>
+                        <span class="card__price">$2400</span>
                         <div class="div-button">
                             <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#portamacetas-casa">Ver detalles</button>
                         </div>
@@ -169,6 +178,7 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/10.jpg" alt="Portamacetas de pie">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Portamacetas de pie</h3>
+                        <span class="card__price">$2400</span>
                         <div class="div-button">
                             <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#portamacetas-de-pie">Ver detalles</button>
                         </div>
@@ -178,6 +188,7 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/11.jpg" alt="Portamacetas colgante">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Portamacetas colgante</h3>
+                        <span class="card__price">$2200</span>
                         <div class="div-button">
                             <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#portamacetas-colgante">Ver detalles</button>
                         </div>
@@ -187,6 +198,7 @@
                     <img class="card__img card__img--small" src="../assets/main-content/productos/12.jpg" alt="Portamacetas hexágono">
                     <div class="card--small__text">
                         <h3 class="card__title card__title--small">Portamacetas hexágono</h3>
+                        <span class="card__price">$1800</span>
                         <div class="div-button">
                             <button type="button" class="button button--small" data-bs-toggle="modal" data-bs-target="#portamacetas-hexagono">Ver detalles</button>
                         </div>
@@ -194,16 +206,189 @@
                 </article>
             </section>
 
+            <!-- modals seccion macetas -->
+            
+            <div class="modal fade" id="maceta-cubo" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Maceta cubo</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/1.jpg" alt="Estanteria con forma de panal de abejas con interior blanco">
+                                <p class="col-10 col-sm-7 mt-2">Maceta ideal para plantas de gran tamaño. Su interior permite que una amplia cantidad de tierra sea el lugar adecuado para las plantas más grandes. Medidas: 50cm x 50 cm.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="maceta-colgante" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Maceta jardinera colgante</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/2.jpg" alt="Maceta jardinera colgante con herrajes de hierro">
+                                <p class="col-10 col-sm-7 mt-2">Nuestra jardinera colgante es ideal para balcones o paredes. Cuentan con herrajes que sirven para colocarlas donde quieras. Recorda: los herrajes pueden ser hechos a medida para mejor adaptabilidad. Medidas: 60cm x 15 cm. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="maceta-cactus" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Maceta para cactus</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/3.jpg" alt="Maceta pequeña para cactus">
+                                <p class="col-10 col-sm-7 mt-2">Maceta pequeña, ideal para cactus o suculentas. Su tamaño es perfecto para decorar el centro de tu mesa o mesita de luz. Medidas: 12cm x 12cm.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="maceta-jardinera" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Maceta jardinera</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/4.jpg" alt="Maceta jardinera común de 70 centimetros">
+                                <p class="col-10 col-sm-7 mt-2">Nuestra maceta jardinera es de las más elegidas por nuestros clientes, que desean darle un lugar especial a sus plantas más lindas. Además, muchos las eligen para hacer huertas en hogares pequeños. Recordá: podés pedir tamaños personalizados. Medidas: 70cm x 20cm.</p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modals seccion muebles -->
+
+            <div class="modal fade" id="estanteria-panal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Estanteria Panal</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/5.jpg" alt="Estanteria con forma de panal de abejas con interior blanco">
+                                <p class="col-10 col-sm-7 mt-2">Estanteria panal con 5 estantes hexagonales. Posee el color de la madera original, con una capa protectora de laca brillante. Ideal para tu sala de estar o habitación. ¡Practicidad y originalidad en un solo producto! Medidas: 1,20m x 0,85m. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="estanteria-panal-blanco" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Estanteria Panal (interior blanco)</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/6.jpg" alt="Estanteria con forma de panal de abejas con interior blanco">
+                                <p class="col-10 col-sm-7 mt-2">Estanteria panal con 5 estantes hexagonales. Posee el color de la madera original con una capa protectora de laca brillante en su exterior, y su interior es blanco. Ideal para tu sala de estar o habitación. ¡Practicidad y originalidad en un solo producto! Medidas: 1,20m x 0,85m. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="mesa-de-arrime" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Mesa de arrime</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/7.jpg" alt="Mesa de arrime con base de hierro">
+                                <p class="col-10 col-sm-7 mt-2">Hermosa mesa de arrime que convina la belleza de la madera y el hierro. Sus patas de hierro se encuentran pintadas de blanco; y la madera de la parte superior posee una capa protectora de laca que le da un brillo único. Medidas: 90cm x 40cm. Alto: 90cm.  
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="estante-hexagonal" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h4 class="main__title" id="modal-title">Estante hexágonal</h4>
+                        </div>
+                        <div class="modal-body container">
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/8.jpg" alt="Portamacetas hexágono">
+                                <p class="col-10 col-sm-7 mt-2">Estante con forma hexágonal que cuenta con una separación en el medio. Ideal para combinar con otros tipos, como la estanteria panal o el estance macetero hexágonal. Medida: 35cm. 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="button button--close button--small" data-bs-dismiss="modal">Cerrar</button>
+                            <button type="button" class="button"><a href="./pedido.html">Comprar</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- modals seccion portamacetas -->
+
             <div class="modal fade" id="portamacetas-casa" tabindex="-1" role="dialog" aria-labelledby="modal-title" aria-hidden="true" data-bs-backdrop="static">
                 <div class="modal-dialog modal-dialog-centered" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                        <h4 class="main__title" id="modal-title">Portamacetas "Hogar""</h4>
+                        <h4 class="main__title" id="modal-title">Portamacetas "Hogar"</h4>
                         </div>
                         <div class="modal-body container">
-                            <div class="row justify-content-around">
-                                <img class="col-4" src="../assets/main-content/productos/9.jpg" alt="Portamacetas con forma de casa">
-                                <p class="col-7">Portamacetas "Hogar" con forma de casas. Contienen pequeñas macetas y estantes para pequeñas plantas. Medidas: 50cm x 40cm. 
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/9.jpg" alt="Portamacetas con forma de casa">
+                                <p class="col-10 col-sm-7 mt-2">Portamacetas "Hogar" con forma de casas. Contienen pequeñas macetas y estantes para pequeñas plantas. Medidas: 50cm x 40cm. 
                                 </p>
                             </div>
                         </div>
@@ -222,9 +407,9 @@
                         <h4 class="main__title" id="modal-title">Portamacetas de pie</h4>
                         </div>
                         <div class="modal-body container">
-                            <div class="row justify-content-around">
-                                <img class="col-4" src="../assets/main-content/productos/10.jpg" alt="Portamacetas de pie">
-                                <p class="col-7">Portamacetas de pie perfecto para cactus y suculentas. Apto para interior y exterior. ¡Entran 15 macetas aproximadamente! Medidas:95Cm x 56cm. Cuenta con patas para poder apoyacrlo donde quieras. 
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/10.jpg" alt="Portamacetas de pie">
+                                <p class="col-10 col-sm-7 mt-2">Portamacetas de pie perfecto para cactus y suculentas. Apto para interior y exterior. ¡Entran 15 macetas aproximadamente! Medidas:95Cm x 56cm. Cuenta con patas para poder apoyacrlo donde quieras. 
                                 </p>
                             </div>
                         </div>
@@ -243,9 +428,9 @@
                         <h4 class="main__title" id="modal-title">Portamacetas Colgante</h4>
                         </div>
                         <div class="modal-body container">
-                            <div class="row justify-content-around">
-                                <img class="col-4" src="../assets/main-content/productos/11.jpg" alt="Portamacetas colgante">
-                                <p class="col-7">Portamacetas colgante de pino perfecto para cactus y suculentas. Apto para interior y exterior. ¡Entran 15 macetas aproximadamente! Medidas:95Cm x 56cm.
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/11.jpg" alt="Portamacetas colgante">
+                                <p class="col-10 col-sm-7 mt-2">Portamacetas colgante de pino perfecto para cactus y suculentas. Apto para interior y exterior. ¡Entran 15 macetas aproximadamente! Medidas:95Cm x 56cm.
                                 </p>
                             </div>
                         </div>
@@ -264,9 +449,9 @@
                         <h4 class="main__title" id="modal-title">Portamacetas Hexágono</h4>
                         </div>
                         <div class="modal-body container">
-                            <div class="row justify-content-around">
-                                <img class="col-4" src="../assets/main-content/productos/12.jpg" alt="Portamacetas hexágono">
-                                <p class="col-7">Hexágono macetero de 35cm de diametro. Su interior se encuentra impermeabilizado y es apto para contener la tierra de tus plantas. También posee orificios de drenaje.
+                            <div class="row flex-column align-items-center flex-sm-row justify-content-around">
+                                <img class="col-5 col-sm-4" src="../assets/main-content/productos/12.jpg" alt="Portamacetas hexágono">
+                                <p class="col-10 col-sm-7 mt-2">Hexágono macetero de 35cm de diametro. Su interior se encuentra impermeabilizado y es apto para contener la tierra de tus plantas. También posee orificios de drenaje. Medida: 35cm. 
                                 </p>
                             </div>
                         </div>
@@ -282,7 +467,7 @@
 
         <footer class="footer cointainer-fluid">
 
-            <div class="row flex-column align-items-center flex-md-row w-100">
+            <div class="row flex-column align-items-center flex-md-row gx-0">
         
                 <div class="footer__page-info d-flex flex-column flex-md-row justify-content-evenly align-items-center mt-3 col-md-5">
                     <a class="logo mb-md-3" href="../index.html"><img class="logo logo--small" src="../assets/icons/logo.png" alt="Logo Nodür"></a>
